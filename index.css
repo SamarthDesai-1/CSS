@@ -67,5 +67,41 @@ body {
 
   padding: 10px;
   margin: 10px;
+ 
+
+  /* Outline */
+
+  outline-style: dotted;
+  /* outline-style: dashed; */
+  /* outline-style: double; */
+  /* outline-style: solid; */
+  /* outline-style: groove; */
+  /* outline-style: ridge; */
+  /* outline-style: inset; */
+  /* outline-style: outset; */
+  /* outline-style: none; */
+  /* outline-style: hidden; */
+
+  /* Short end property */ 
+  /* outline: cadetblue 5px solid; */
+
+  outline-color: cadetblue;
+  /* outline-width: medium; */
+  outline-offset: 10px;
+
+
+
+  /* Text */
+
+  /* text-align: center; */
+  /* text-align: left; */
+  /* text-align: right; */
+  /* text-align: justify; */
+  /* text-align-last: center; */
   
+  /* direction: ltr; */
+  /* direction: rtl; */
+
+  /* vertical-align: text-top; */
+  /* vertical-align: text-bottom; */
 }
