@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .box1 {
+        background-color: gold;
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        box-sizing: content-box;
+        border: 5px solid red;
+        padding: 20px;
+      }
+      .box2 {
+        background-color: gold;
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 5px solid red;
+        padding: 20px;
+
+        /* animation: fadeIn 2s ease-in-out; */
+
+        animation: bounce 2s infinite alternate;
+      }
+
+      /* @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      } */
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateY(-20px);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Transform</h1>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>

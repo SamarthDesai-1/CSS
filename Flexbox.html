@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        border-radius: 10px;
+      }
+      .container {
+        width: 70%;
+        height: 900px;
+        background-color: black;
+        padding: 7px;
+
+        display: flex;
+
+        /* flex-direction: column; */
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* justify-content: center; */
+        /* justify-content: left; */
+        /* justify-content: right; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* justify-content: safe; */
+
+        /* Align itens works for vertical direction y-axix from top to bottom */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: end; */
+        /* align-items: start; */
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+
+        /* align-content: end; */
+        /* align-content: start; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: space-evenly; */
+
+      }
+      .box {
+        flex-grow: 1;
+        flex-shrink: 2;
+        flex-basis: 100px; /* Used as to give flex box width. */ 
+        /* align-self: center; */
+        /* align-self: flex-end; */
+        /* align-items: flex-start; */
+
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        border: 10px solid orange;
+        font-size: 50px;
+      }
+
+      @media (max-width: 720px) {
+
+        .container {
+          flex-direction: column;
+        }
+        
+      }
+      @media (min-width: 480px) {
+
+        .container {
+          background-color: cadetblue;
+        }
+        
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Display Flex</h1>
+    <br />
+
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+
+
+      <!-- <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div> -->
+
+    </div>
+  </body>
+</html>

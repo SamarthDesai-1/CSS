@@ -2,7 +2,7 @@
 
 
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -104,4 +104,153 @@ body {
 
   /* vertical-align: text-top; */
   /* vertical-align: text-bottom; */
+
+
+
+
+
+
+  /* Text Decoration */
+
+  /* text-decoration-line: line-through; */
+  /* text-decoration-line: overline; */
+  text-decoration-line: underline;
+  /* text-decoration-line: overline underline; */
+  /* text-decoration: none; */
+  text-decoration-color: crimson;
+  /* text-decoration-style: solid; */
+  /* text-decoration-style: dashed; */
+  /* text-decoration-style: dotted; */
+  /* text-decoration-style: double; */
+  /* text-decoration-style: wavy; */
+  /* text-decoration-thickness: 1.2px; */
+
+  /* Short end property */
+  /* text-decoration: underline crimson solid 1.2px; */
+
+
+
+
+
+  /* Text Transform */
+  
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+  /* text-transform: none; */
+
+  /* text-indent: 50px; */
+  /* letter-spacing: 1.2px; */
+  /* line-height: 1.6 */
+
+  /* text-shadow: 2px 2px 2.5px chartreuse; */
+
+
+
+
+
+
+  /* Font */
+
+  /* font-style: normal; */
+  /* font-style: italic; */
+  /* font-style: oblique; */
+
+  font-size: 20px;
+}
+
+.link {
+
+  font-size: 25px;
+  text-decoration: none;
+  background-color: red;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+a:link {
+  /* color: red; */
+}
+a:visited {
+  /* color: green; */
+}
+a:hover {
+  /* color: hotpink;
+  text-decoration: underline; */
+
+
+
+
+  background-color: black;
+  background-color: white;
+  color: red;
+}
+a:active {
+  /* color: blue; */
+}
+
+
+
+
+/* Lists */
+ul.a {
+  /* list-style-type: circle; */
+  /* list-style-type: square; */
+  /* list-style-type: disc; */
+  /* list-style-type: none; */
+  /* list-style-image: url('/IMAGES/Box-model.png'); */
+
+  /* list-style-position: inside; */
+  /* list-style-position: outside; */
+  
+
+  /* Short end */
+  /* list-style: square inside url('/IMAGES/Box-model.png'); */
+
+
+}
+
+ol.b {
+  list-style-type: upper-roman;
+  /* list-style-type: lower-roman; */
+  /* list-style-type: upper-alpha; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: decimal; */
+  /* list-style-type: none; */
+
+  /* list-style-position: inside; */
+  /* list-style-position: outside; */
+}
+
+
+/* Tables */
+
+table, th, td {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+table {
+  /* width: 100%; */
+  /* border-collapse: collapse; */
+
+}
+th {
+  height: 50px;
+  text-align: left;
+
+
+  /* vertical-align: top; */
+  /* vertical-align: bottom; */
+  /* vertical-align: middle; */
+  /* vertical-align: text-top; */
+  /* vertical-align: text-bottom; */
+  /* vertical-align: baseline; */
+  /* vertical-align: sub; */
+  /* vertical-align: super; */
+  /* vertical-align: initial; */
+}
+td {
+  font-weight: 700;
 }

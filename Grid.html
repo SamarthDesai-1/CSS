@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    * {
+      border-radius: 10px;
+    }
+
+    .container {
+      display: grid;
+      border: 2px solid black;
+      padding: 15px;  
+      height: 250px;
+      width: 750px;
+
+      /* grid-template-rows: 150px 150px 150px; */
+      /* overflow: scroll; */
+
+      /* grid-template-columns: 150px 150px 150px; */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      /* grid-template-columns: 2fr 2fr 1fr; */
+
+      grid-template-columns: repeat(3, 2fr);
+      grid-gap: 10px;
+
+      /* column-gap: 100px; */
+      /* row-gap: 100px; */
+
+
+    }
+
+    .box1 {
+      background-color: red;
+      font-size: 25px;
+
+      /* grid-row-start: 2;
+      grid-row-end: 3; */
+
+      /* Short end property of above two line of code */
+      grid-row: 1/3;
+
+      /* grid-column-start: 3;
+      grid-column-end: 4; */
+
+      /* Short end property of above two line of code */
+      grid-column: 3/4;
+
+
+    }
+    .box2 {
+      background-color: blue;
+      font-size: 25px;
+
+      grid-column: 1/3;
+    }
+    .box3 {
+      background-color: green;
+      font-size: 25px;
+    }
+    .box4 {
+      background-color: yellow;
+      font-size: 25px;
+    }
+    .box5 {
+      background-color: pink;
+      font-size: 25px;
+    }
+    .box6 {
+      background-color: purple;
+      font-size: 25px;
+    }
+    .box7 {
+      background-color: orange;
+      font-size: 25px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+  </div>
+
+</body>
+</html>
