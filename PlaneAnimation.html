@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Container for the animation */
+      .sky {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        /* overflow: hidden; */
+        background: #87ceeb
+      }
+
+      /* Airplane styling and animation */
+      .airplane {
+        position: absolute;
+        font-size: 40px; /* Adjust size as needed */
+        animation: flyAcross 9s linear infinite,
+          bobUpDown 1s ease-in-out infinite;
+      }
+
+
+      /* Animation keyframes */
+      @keyframes flyAcross {
+        0% {
+          left: -50px;
+          transform: rotate(0deg);
+        }
+        100% {
+          left: 100%;
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes bobUpDown {
+        0%,
+        100% {
+          top: 80px;
+        }
+        50% {
+          top: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sky">
+      <div class="airplane">✈</div>
+    </div>
+  </body>
+</html>
